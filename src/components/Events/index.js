@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Line } from "../../Assets/images/Line.svg";
 import {
@@ -49,3 +50,4 @@ const Events = () => {
 };
 
 export default Events;
+

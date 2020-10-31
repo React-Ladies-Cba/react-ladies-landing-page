@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const Home = styled.div`
@@ -121,3 +122,4 @@ export const Button = styled.button`
   left: 150px;
   top: 646px;
 `;
+
