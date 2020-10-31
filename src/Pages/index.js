@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Main from '../components/Main/index';
 import Events from '../components/Events/index';
 import Talks from '../components/Talks/Talks';
-import Podcasts from '../components/Podcast/index';
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
         <Main/>
         <Events/>
         <Talks/>
-        <Podcasts/>
         </>
     );
 };
