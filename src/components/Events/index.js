@@ -1,15 +1,20 @@
+
 import React from "react";
 import { Line } from "../../Assets/images/Line.svg";
 import {
   Event,
   Text,
   EventCardContainer,
-  EventCardTitle,
   EventCardDetail,
   EventImg,
   EventCardContent,
   Li,
   EventLink,
+  EventTopBar,
+  Title,
+  TextBox,
+  TextImage,
+  TextDetail
 } from "./eventsElements";
 
 const Events = () => {
@@ -18,7 +23,9 @@ const Events = () => {
       <Event>
         <Text>📅 Eventos</Text>
         <EventCardContainer>
-          <EventCardTitle>Workshop React</EventCardTitle>
+          <EventTopBar>
+            <Title>Workshop React</Title>
+          </EventTopBar>
           <EventCardDetail>
             📅 15/08/20 🕒 19:00hs 😀 Mentora: Carolina Bustos
           </EventCardDetail>
@@ -32,9 +39,15 @@ const Events = () => {
           </EventCardContent>
           <EventLink>Leer más</EventLink>
         </EventCardContainer>
+        <TextBox>
+          <TextImage>👏</TextImage>
+          <TextDetail>¡No te los pierdas!
+</TextDetail>
+        </TextBox>
       </Event>
     </fragment>
   );
 };
 
 export default Events;
+
