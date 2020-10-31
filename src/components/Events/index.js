@@ -10,7 +10,10 @@ import {
   Li,
   EventLink,
   EventTopBar,
-  Title
+  Title,
+  TextBox,
+  TextImage,
+  TextDetail
 } from "./eventsElements";
 
 const Events = () => {
@@ -35,6 +38,11 @@ const Events = () => {
           </EventCardContent>
           <EventLink>Leer más</EventLink>
         </EventCardContainer>
+        <TextBox>
+          <TextImage>👏</TextImage>
+          <TextDetail>¡No te los pierdas!
+</TextDetail>
+        </TextBox>
       </Event>
     </fragment>
   );

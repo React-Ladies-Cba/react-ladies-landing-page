@@ -77,8 +77,8 @@ export const EventImg = styled.img`
   position: absolute;
   width: 342px;
   height: 0px;
-  left: 935px;
-  top: 1009px;
+  left: 13px;
+  top: 145px;
   border: 1px solid rgba(21, 5, 78, 0.2);
 `;
 
@@ -86,8 +86,8 @@ export const EventCardContent = styled.dl`
   position: absolute;
   width: 324px;
   height: 85px;
-  left: 935px;
-  top: 1023px;
+  left: 15px;
+  top: 160px;
 `;
 
 export const Li = styled.li`
@@ -102,14 +102,38 @@ export const Li = styled.li`
 
 export const EventLink = styled(LinkR)`
   position: absolute;
-  left: 64.93%;
-  right: 29.86%;
-  top: 28.27%;
-  bottom: 71.02%;
+  left: 15px;
+  top: 280px;
   font-family: Cocogoose;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #c033b6;
+`;
+
+export const TextBox = styled.div`
+  position: absolute;
+  width: 187px;
+  height: 26px;
+  left: 900px;
+  top: 1300px;
+`;
+
+export const TextImage = styled.image`
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 75px;
+  bottom: 25px;
+`;
+
+export const TextDetail = styled.text`
+  font-family: Cocogoose;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #15054e;
 `;
