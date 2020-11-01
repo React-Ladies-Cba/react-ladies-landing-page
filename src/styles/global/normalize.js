@@ -12,7 +12,7 @@ export default css`
   * {
     margin: 0;
     padding: 0;
-    font-family: "Cocogoose", "Typo Grotesk";
+    font-family: "Cocogoose", "Typo Grotesk", sans-serif;
   }
 
   html,

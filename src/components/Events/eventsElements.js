@@ -39,13 +39,13 @@ export const EventCardTitle = styled.title`
 
 export const EventCardDetail = styled.ul`
   width: 324px;
-  font-family: Typo Grotesk Rounded;
+  font-family: Typo Grotesk Rounded, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: ${({ theme }) => theme.colors.black};
   list-style: none;
   padding: 1rem;
 `;
@@ -63,13 +63,13 @@ export const EventCardContent = styled.dl`
 `;
 
 export const Li = styled.li`
-  font-family: Typo Grotesk Rounded;
+  font-family: Typo Grotesk Rounded, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.08em;
-  color: #000000;
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const EventLink = styled(LinkR)`
