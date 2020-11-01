@@ -7,13 +7,14 @@ import {
   TextImage,
   TextDetail,
 } from "./eventsElements";
+import { Title } from "../../Pages/globalElements";
 import EventItem from "./EventItem";
 
 const Events = () => {
   return (
     <>
       <Event>
-        <Text>📅 Eventos</Text>
+        <Title>📅 Eventos</Title>
         <EventsWrapper>
           <EventItem />
           <EventItem />
