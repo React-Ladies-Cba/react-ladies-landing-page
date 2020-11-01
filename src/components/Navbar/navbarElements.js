@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { down } from "styled-breakpoints";
 
 export const Nav = styled.nav`
   background: linear-gradient(
@@ -31,6 +32,10 @@ export const NavbarContainer = styled.div`
   height: 100%;
   margin: auto;
   max-width: 1200px;
+
+  ${down("tablet")} {
+    justify-content: center;
+  }
 `;
 
 export const NavLogo = styled(LinkR)`

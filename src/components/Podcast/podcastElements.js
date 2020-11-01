@@ -1,3 +1,4 @@
+import { down } from "styled-breakpoints";
 import styled from "styled-components";
 
 export const Podcast = styled.div`
@@ -10,6 +11,10 @@ export const PodcastContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+
+  ${down("tablet")} {
+    flex-direction: column;
+  }
 `;
 
 export const PodcastGreeting = styled.div`
@@ -18,6 +23,10 @@ export const PodcastGreeting = styled.div`
   text-align: left;
   justify-content: space-evenly;
   margin-left: 5rem;
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,6 +37,10 @@ export const Title = styled.h1`
   line-height: 26px;
   color: ${({ theme }) => theme.colors.blue};
   margin-bottom: 40px;
+
+  ${down("tablet")} {
+    margin-bottom: 0;
+  }
 `;
 
 export const Text = styled.span`
@@ -38,6 +51,10 @@ export const Text = styled.span`
   line-height: 22px;
   letter-spacing: 0.15em;
   color: ${({ theme }) => theme.colors.blue};
+
+  ${down("tablet")} {
+    margin-bottom: 16px;
+  }
 `;
 
 export const PodcastMessage = styled.div`
@@ -45,6 +62,10 @@ export const PodcastMessage = styled.div`
   text-align: left;
   justify-content: end;
   margin-left: 5rem;
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -54,7 +75,13 @@ export const H2 = styled.h2`
   font-size: 60px;
   line-height: 85px;
   color: ${({ theme }) => theme.colors.pink};
+
+  ${down("tablet")} {
+    font-size: 40px;
+    line-height: 57px;
+  }
 `;
+
 export const P = styled.p`
   font-family: Cocogoose, sans-serif;
   font-style: normal;
@@ -62,10 +89,19 @@ export const P = styled.p`
   font-size: 16px;
   line-height: 22px;
   color: ${({ theme }) => theme.colors.blue};
+
+  ${down("tablet")} {
+    margin: 16px 0;
+  }
 `;
 
 export const PodcastImage = styled.img`
   max-width: 600px;
+
+  ${down("tablet")} {
+    max-height: 346px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const Button = styled.button`

@@ -1,8 +1,13 @@
+import { down } from "styled-breakpoints";
 import styled from "styled-components";
 
 export const Grid = styled.div`
   max-width: 1200px;
   margin: auto;
+
+  ${down("tablet")} {
+    padding: 0 1rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -24,6 +29,10 @@ export const Button = styled.button`
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   cursor: pointer;
+
+  ${down("tablet")} {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`

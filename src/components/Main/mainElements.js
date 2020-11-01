@@ -1,3 +1,4 @@
+import { down } from "styled-breakpoints";
 import styled from "styled-components";
 
 export const Home = styled.div`
@@ -11,6 +12,10 @@ export const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 64px;
+
+  ${down("tablet")} {
+    flex-direction: column;
+  }
 `;
 
 export const HomeGreeting = styled.div`
@@ -18,6 +23,12 @@ export const HomeGreeting = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: space-evenly;
+`;
+
+export const GreetingWrapper = styled.div`
+  ${down("tablet")} {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,6 +39,10 @@ export const Title = styled.h1`
   line-height: 26px;
   margin-bottom: 14px;
   color: ${({ theme }) => theme.colors.blue};
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
 export const Text = styled.span`
@@ -37,8 +52,6 @@ export const Text = styled.span`
   font-size: 18px;
   line-height: 30px;
   color: ${({ theme }) => theme.colors.blue};
-  width: 500px;
-  height: 50px;
 `;
 
 export const HomeMessage = styled.div`
@@ -46,6 +59,10 @@ export const HomeMessage = styled.div`
   text-align: left;
   justify-content: end;
   margin-left: 5rem;
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -56,8 +73,12 @@ export const H2 = styled.h2`
   font-size: 38px;
   line-height: 40px;
   color: ${({ theme }) => theme.colors.blue};
-  width: 500px;
-  height: 40px;
+
+  ${down("tablet")} {
+    line-height: normal;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
 `;
 export const P = styled.p`
   font-family: Cocogoose, sans-serif;
@@ -66,11 +87,19 @@ export const P = styled.p`
   font-size: 63px;
   line-height: 85px;
   color: ${({ theme }) => theme.colors.pink};
-  width: 369px;
-  height: 85px;
+
+  ${down("tablet")} {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
 `;
 
 export const HomeImage = styled.img`
-  width: 600px;
-  height: 604px;
+  max-width: 600px;
+  max-height: 604px;
+
+  ${down("tablet")} {
+    max-height: 346px;
+  }
 `;

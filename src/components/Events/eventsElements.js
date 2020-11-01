@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { down } from "styled-breakpoints";
 
 export const Event = styled.div`
   width: 100%;
@@ -22,6 +23,11 @@ export const EventCardContainer = styled.div`
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 2px 4px 10px rgba(21, 5, 78, 0.2);
   border-radius: 5px;
+
+  ${down("tablet")} {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const EventCardTitle = styled.title`
@@ -48,6 +54,11 @@ export const EventCardDetail = styled.ul`
   color: ${({ theme }) => theme.colors.black};
   list-style: none;
   padding: 1rem;
+
+  ${down("tablet")} {
+    width: 100%;
+    box-sizing: border-box;
+  }
 `;
 
 export const EventImg = styled.img`
@@ -60,6 +71,11 @@ export const EventCardContent = styled.dl`
   width: 324px;
   padding: 1rem;
   list-style: none;
+
+  ${down("tablet")} {
+    width: 100%;
+    box-sizing: border-box;
+  }
 `;
 
 export const Li = styled.li`
@@ -94,6 +110,10 @@ export const EventsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${down("tablet")} {
+    flex-direction: column;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -103,6 +123,10 @@ export const TextBox = styled.div`
   text-align: center;
   margin-top: 40px;
   font-size: 1.125rem;
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
 export const TextDetail = styled.span`
