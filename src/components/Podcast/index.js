@@ -16,7 +16,7 @@ import Audio from "../../Assets/images/podcast.png";
 
 const Podcasts = () => {
   return (
-    <fragment>
+    <>
       <Podcast>
         <PodcastContainer>
           <PodcastGreeting>
@@ -37,7 +37,7 @@ const Podcasts = () => {
           </PodcastButton>
         </PodcastContainer>
       </Podcast>
-    </fragment>
+    </>
   );
 };
 
