@@ -27,7 +27,7 @@ export const Title = styled.h1`
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #15054e;
+  color: ${({ theme }) => theme.colors.blue};
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@ export const Text = styled.text`
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.15em;
-  color: #15054e;
+  color: ${({ theme }) => theme.colors.blue};
   position: absolute;
   width: 500px;
   height: 50px;
@@ -63,7 +63,7 @@ export const H2 = styled.h2`
   font-weight: normal;
   font-size: 60px;
   line-height: 85px;
-  color: #c033b6;
+  color: ${({ theme }) => theme.colors.pink};
   position: absolute;
   width: 500px;
   height: 40px;
@@ -76,7 +76,7 @@ export const P = styled.p`
   font-weight: 250;
   font-size: 16px;
   line-height: 22px;
-  color: #15054e;
+  color: ${({ theme }) => theme.colors.blue};
   position: absolute;
   width: 369px;
   height: 85px;
@@ -102,8 +102,10 @@ export const PodcastButton = styled.div`
 
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
-  background: ${(props) => (props.primary ? "#46108A" : "white")};
-  color: ${(props) => (props.primary ? "white" : "#46108A")};
+  background: ${({ primary }) =>
+    primary ? theme.colors.violet : theme.colors.white};
+  color: ${({ primary }) =>
+    primary ? theme.colors.white : theme.colors.violet};
 
   display: flex;
   font-family: Cocogoose;

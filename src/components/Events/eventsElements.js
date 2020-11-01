@@ -20,7 +20,7 @@ export const Text = styled.h1`
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
-  color: #15054e;
+  color: ${({ theme }) => theme.colors.blue};
 `;
 
 export const EventCardContainer = styled.div`
@@ -29,7 +29,7 @@ export const EventCardContainer = styled.div`
   height: 307px;
   left: 150px;
   top: 864px;
-  background: #ffffff;
+  background: ${({ theme }) => theme.colors.white};
   box-shadow: 2px 4px 10px rgba(21, 5, 78, 0.2);
   border-radius: 5px;
 `;
@@ -40,14 +40,14 @@ export const EventCardTitle = styled.title`
   height: 61px;
   left: 150px;
   top: 864px;
-  background-color: #46108a;
+  background-color: ${({ theme }) => theme.colors.violet};
   border-radius: 5px 5px 0px 0px;
   font-family: COCOGOOSE;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const EventCardDetail = styled.ul`
@@ -103,5 +103,53 @@ export const EventLink = styled(LinkR)`
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #c033b6;
+  color: ${({ theme }) => theme.colors.pink};
+`;
+
+export const EventTopBar = styled.div`
+  position: absolute;
+  width: 367px;
+  height: 61px;
+  background: ${({ theme }) => theme.colors.violet};
+  border-radius: 5px 5px 0px 0px;
+`;
+
+export const TextBox = styled.div`
+  position: absolute;
+  width: 187px;
+  height: 26px;
+  left: 900px;
+  top: 1300px;
+`;
+
+export const TextDetail = styled.text`
+  font-family: Cocogoose;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.blue};
+`;
+
+export const TextImage = styled.image`
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 75px;
+  bottom: 25px;
+`;
+
+export const Title = styled.h3`
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  left: 15px;
+  top: 22px;
+  font-family: COCOGOOSE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: ${({ theme }) => theme.colors.white};
 `;

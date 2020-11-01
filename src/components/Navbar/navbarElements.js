@@ -3,7 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: linear-gradient(90deg, #c033b6 14.17%, #46108a 86.04%);
+  background: linear-gradient(
+    90deg,
+    ${({ theme }) => `${theme.colors.pink} 14.17%,
+    ${theme.colors.violet} 86.04%`}
+  );
   height: 65px;
   display: flex;
   justify-content: center;
@@ -44,11 +48,10 @@ export const NavMenu = styled.ul`
   text-align: center;
   justify-content: end;
   margin-left: 40rem;
-
 `;
 
 export const NavItem = styled.li`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.white};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -57,7 +60,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkS)`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.white};
   display: flex;
   align-items: center;
   padding: 0 2rem;
@@ -65,7 +68,6 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #c033b6;
+    border-bottom: 3px solid ${({ theme }) => theme.colors.pink};
   }
 `;
-
