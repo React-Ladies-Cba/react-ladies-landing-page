@@ -2,44 +2,31 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const Event = styled.div`
-  position: absolute;
   width: 100%;
   height: 100%;
-  left: 6px;
-  top: 5rem;
 `;
 
 export const Text = styled.h1`
-  position: absolute;
-  width: 110px;
-  height: 26px;
-  left: 150px;
-  top: 797px;
   font-family: Cocogoose;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 40px;
   color: ${({ theme }) => theme.colors.blue};
 `;
 
 export const EventCardContainer = styled.div`
-  position: absolute;
   width: 367px;
   height: 307px;
-  left: 150px;
-  top: 864px;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 2px 4px 10px rgba(21, 5, 78, 0.2);
   border-radius: 5px;
 `;
 
 export const EventCardTitle = styled.title`
-  position: absolute;
   width: 367px;
   height: 61px;
-  left: 150px;
-  top: 864px;
   background-color: ${({ theme }) => theme.colors.violet};
   border-radius: 5px 5px 0px 0px;
   font-family: COCOGOOSE;
@@ -51,11 +38,7 @@ export const EventCardTitle = styled.title`
 `;
 
 export const EventCardDetail = styled.ul`
-  position: absolute;
   width: 324px;
-  height: 82px;
-  left: 49px;
-  top: 537px;
   font-family: Typo Grotesk Rounded;
   font-style: normal;
   font-weight: normal;
@@ -63,23 +46,20 @@ export const EventCardDetail = styled.ul`
   line-height: 20px;
   letter-spacing: 0.05em;
   color: #000000;
+  list-style: none;
+  padding: 1rem;
 `;
 
 export const EventImg = styled.img`
-  position: absolute;
   width: 342px;
   height: 0px;
-  left: 935px;
-  top: 1009px;
   border: 1px solid rgba(21, 5, 78, 0.2);
 `;
 
 export const EventCardContent = styled.dl`
-  position: absolute;
   width: 324px;
-  height: 85px;
-  left: 935px;
-  top: 1023px;
+  padding: 1rem;
+  list-style: none;
 `;
 
 export const Li = styled.li`
@@ -93,36 +73,39 @@ export const Li = styled.li`
 `;
 
 export const EventLink = styled(LinkR)`
-  position: absolute;
-  left: 64.93%;
-  right: 29.86%;
-  top: 28.27%;
-  bottom: 71.02%;
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  padding: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
   color: ${({ theme }) => theme.colors.pink};
 `;
 
 export const EventTopBar = styled.div`
-  position: absolute;
-  width: 367px;
-  height: 61px;
+  padding: 1rem;
   background: ${({ theme }) => theme.colors.violet};
   border-radius: 5px 5px 0px 0px;
 `;
 
-export const TextBox = styled.div`
-  position: absolute;
-  width: 187px;
-  height: 26px;
-  left: 900px;
-  top: 1300px;
+export const EventsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-export const TextDetail = styled.text`
+export const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.125rem;
+`;
+
+export const TextDetail = styled.span`z
   font-family: Cocogoose;
   font-style: normal;
   font-weight: normal;
@@ -133,23 +116,20 @@ export const TextDetail = styled.text`
 `;
 
 export const TextImage = styled.image`
-  position: absolute;
-  width: 43px;
-  height: 43px;
-  left: 75px;
-  bottom: 25px;
+  font-size: 30px;
 `;
 
 export const Title = styled.h3`
-  position: absolute;
   width: 168px;
   height: 18px;
-  left: 15px;
-  top: 22px;
-  font-family: COCOGOOSE;
+  font-family: Cocogoose;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
   color: ${({ theme }) => theme.colors.white};
+`;
+
+export const Line = styled.hr`
+  margin: 0 1rem;
 `;

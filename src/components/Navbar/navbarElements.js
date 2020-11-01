@@ -23,21 +23,19 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-  displey: flex;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
 `;
 
 export const NavLogo = styled(LinkR)`
-  position: absolute;
   width: 152px;
   height: 46px;
-  left: 200px;
-  top: 10px;
 `;
 
 export const NavMenu = styled.ul`
@@ -46,8 +44,6 @@ export const NavMenu = styled.ul`
   justify-content: center;
   list-style: none;
   text-align: center;
-  justify-content: end;
-  margin-left: 40rem;
 `;
 
 export const NavItem = styled.li`
@@ -55,7 +51,6 @@ export const NavItem = styled.li`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 1.8rem 3rem;
   height: 100%;
 `;
 
