@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Nav,
   NavbarContainer,
@@ -6,14 +6,9 @@ import {
   NavMenu,
   NavItem,
   NavLink,
-} from './navbarElements';
-import Logo from '../../Assets/images/Logo.png';
-import {
-  FaTwitch,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-} from 'react-icons/fa';
+} from "./navbarElements";
+import Logo from "../../Assets/images/logo.svg";
+import { FaTwitch, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -48,4 +43,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
