@@ -10,6 +10,8 @@ export const Nav = styled.nav`
     ${theme.colors.violet} 86.04%`}
   );
   height: 65px;
+  font-family: Cocogoose, sans-serif;
+  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
