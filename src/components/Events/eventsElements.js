@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { down } from "styled-breakpoints";
 
 export const Event = styled.div`
   width: 100%;
@@ -7,7 +8,7 @@ export const Event = styled.div`
 `;
 
 export const Text = styled.h1`
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -22,6 +23,11 @@ export const EventCardContainer = styled.div`
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 2px 4px 10px rgba(21, 5, 78, 0.2);
   border-radius: 5px;
+
+  ${down("tablet")} {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const EventCardTitle = styled.title`
@@ -29,7 +35,7 @@ export const EventCardTitle = styled.title`
   height: 61px;
   background-color: ${({ theme }) => theme.colors.violet};
   border-radius: 5px 5px 0px 0px;
-  font-family: COCOGOOSE;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -39,15 +45,20 @@ export const EventCardTitle = styled.title`
 
 export const EventCardDetail = styled.ul`
   width: 324px;
-  font-family: Typo Grotesk Rounded;
+  font-family: Typo Grotesk Rounded, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: ${({ theme }) => theme.colors.black};
   list-style: none;
   padding: 1rem;
+
+  ${down("tablet")} {
+    width: 100%;
+    box-sizing: border-box;
+  }
 `;
 
 export const EventImg = styled.img`
@@ -60,16 +71,21 @@ export const EventCardContent = styled.dl`
   width: 324px;
   padding: 1rem;
   list-style: none;
+
+  ${down("tablet")} {
+    width: 100%;
+    box-sizing: border-box;
+  }
 `;
 
 export const Li = styled.li`
-  font-family: Typo Grotesk Rounded;
+  font-family: Typo Grotesk Rounded, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.08em;
-  color: #000000;
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const EventLink = styled(LinkR)`
@@ -94,6 +110,10 @@ export const EventsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${down("tablet")} {
+    flex-direction: column;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -103,12 +123,16 @@ export const TextBox = styled.div`
   text-align: center;
   margin-top: 40px;
   font-size: 1.125rem;
+
+  ${down("tablet")} {
+    margin: 0;
+  }
 `;
 
-export const TextDetail = styled.span`z
-  font-family: Cocogoose;
+export const TextDetail = styled.span`
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -122,7 +146,7 @@ export const TextImage = styled.image`
 export const Title = styled.h3`
   width: 168px;
   height: 18px;
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;

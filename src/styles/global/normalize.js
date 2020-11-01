@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 export default css`
   @font-face {
-    font-family: Cocogoose;
+    font-family: Cocogoose, sans-serif;
     font-style: normal;
     font-weight: 100;
     src: local("Cocogoose"),
@@ -12,7 +12,7 @@ export default css`
   * {
     margin: 0;
     padding: 0;
-    font-family: "Cocogoose", "Typo Grotesk";
+    font-family: "Cocogoose", "Typo Grotesk", sans-serif;
   }
 
   html,
