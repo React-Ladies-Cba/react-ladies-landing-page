@@ -68,8 +68,6 @@ export const PodcastImage = styled.img`
   max-width: 600px;
 `;
 
-export const PodcastButton = styled.div``;
-
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${({ primary, theme }) =>

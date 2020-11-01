@@ -7,7 +7,6 @@ import {
   H2,
   P,
   PodcastImage,
-  PodcastButton,
 } from "../Podcast/podcastElements.js";
 import { Button, Title } from "../../Pages/globalElements";
 import Audio from "../../Assets/images/podcast.png";
@@ -28,10 +27,10 @@ const Podcasts = () => {
               Todas las semanas sacamos un nuevo episodio de todos los temas que
               te podés imaginar del mundo IT.
             </P>
-            <PodcastButton md="6">
+            <div>
               <Button primary>Escuchar podcast</Button>
               <Button>Proponer un tema</Button>
-            </PodcastButton>
+            </div>
           </PodcastGreeting>
         </PodcastContainer>
       </Podcast>
