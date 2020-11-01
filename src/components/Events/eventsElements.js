@@ -7,7 +7,7 @@ export const Event = styled.div`
 `;
 
 export const Text = styled.h1`
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -29,7 +29,7 @@ export const EventCardTitle = styled.title`
   height: 61px;
   background-color: ${({ theme }) => theme.colors.violet};
   border-radius: 5px 5px 0px 0px;
-  font-family: COCOGOOSE;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -105,10 +105,10 @@ export const TextBox = styled.div`
   font-size: 1.125rem;
 `;
 
-export const TextDetail = styled.span`z
-  font-family: Cocogoose;
+export const TextDetail = styled.span`
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -122,7 +122,7 @@ export const TextImage = styled.image`
 export const Title = styled.h3`
   width: 168px;
   height: 18px;
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;

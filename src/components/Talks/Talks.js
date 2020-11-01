@@ -3,7 +3,6 @@ import {
   Talk,
   TalkContainer,
   TalkGreeting,
-  Title,
   Text,
   TalkMessage,
   H2,
@@ -11,7 +10,7 @@ import {
   TalkImage,
   TalkButton,
 } from "../Talks/talksElements";
-import { Button } from "../../Pages/globalElements";
+import { Button, Title } from "../../Pages/globalElements";
 import Design from "../../Assets/images/design.png";
 
 const Talks = () => {

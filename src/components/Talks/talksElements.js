@@ -4,6 +4,7 @@ export const Talk = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  margin-top: 85px;
 `;
 
 export const TalkContainer = styled.div`
@@ -18,16 +19,6 @@ export const TalkGreeting = styled.div`
   display: flex;
   text-align: left;
   flex-direction: column;
-`;
-
-export const Title = styled.h1`
-  font-family: Cocogoose, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
-  color: ${({ theme }) => theme.colors.blue};
-  height: 100%;
 `;
 
 export const Text = styled.span`
@@ -56,7 +47,7 @@ export const H2 = styled.h2`
   color: ${({ theme }) => theme.colors.pink};
 `;
 export const P = styled.p`
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: 250;
   font-size: 16px;
@@ -81,7 +72,7 @@ export const Button = styled.button`
     primary ? theme.colors.white : theme.colors.violet};
 
   display: flex;
-  font-family: Cocogoose;
+  font-family: Cocogoose, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

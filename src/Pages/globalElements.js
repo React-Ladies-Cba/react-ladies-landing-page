@@ -11,7 +11,8 @@ export const Button = styled.button`
     primary ? theme.colors.violet : theme.colors.white};
   color: ${({ primary, theme }) =>
     primary ? theme.colors.white : theme.colors.violet};
-
+  border: ${({ primary, theme }) =>
+    !primary ? `2px solid ${theme.colors.violet}` : "0"};
   font-family: Cocogoose, sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -22,6 +23,15 @@ export const Button = styled.button`
   height: 45px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  border: 0;
   cursor: pointer;
+`;
+
+export const Title = styled.h1`
+  font-family: Cocogoose, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 40px;
+  color: ${({ theme }) => theme.colors.blue};
 `;
