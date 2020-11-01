@@ -3,6 +3,7 @@ import {
   Home,
   HomeContainer,
   HomeGreeting,
+  GreetingWrapper,
   Title,
   Text,
   H2,
@@ -17,13 +18,13 @@ const Main = () => {
     <Home>
       <HomeContainer>
         <HomeGreeting>
-          <div>
+          <GreetingWrapper>
             <Title>👋¡Hola! Somos #ReactLadies </Title>
             <Text>
               Somos personas que amamos lo que hacemos, queremos que todos y
               todas formen parte
             </Text>
-          </div>
+          </GreetingWrapper>
           <div>
             <H2>Un espacio para</H2>
             <P>comunicar</P>
