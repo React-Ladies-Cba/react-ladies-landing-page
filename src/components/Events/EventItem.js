@@ -18,7 +18,7 @@ const EventItem = () => (
     <EventCardDetail>
       <li>📅 15/08/20</li>
       <li>🕒 19:00hs</li>
-      <li>😀 Mentora: Carolina Bustos</li>
+      <li>😀 Mentora: Maria Ocampo</li>
     </EventCardDetail>
     <Line />
     <EventCardContent>
