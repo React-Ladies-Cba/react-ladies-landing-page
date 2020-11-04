@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 65px;
   background: linear-gradient(
@@ -8,7 +11,7 @@ export const Container = styled.div`
     ${({ theme }) => `${theme.colors.pink} 14.17%,
     ${theme.colors.violet} 86.04%`}
   );
-  position: relative;
+  display: flex;
 `;
 
 export const CentralLine = styled.h3`
@@ -18,8 +21,4 @@ export const CentralLine = styled.h3`
   font-weight: 250;
   font-size: 18px;
   line-height: 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `;

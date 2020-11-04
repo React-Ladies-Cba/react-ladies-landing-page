@@ -6,6 +6,7 @@ import Talks from "../components/Talks/Talks";
 import Podcasts from "../components/Podcast";
 import { Grid } from "./globalElements";
 import Footer from "../components/Footer/footer";
+import Redes from "../components/Redes/redes";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Podcasts />
         <Talks />
       </Grid>
+      <Redes />
       <Footer />
     </>
   );
