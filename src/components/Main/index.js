@@ -19,7 +19,7 @@ const Main = () => {
       <HomeContainer>
         <HomeGreeting>
           <GreetingWrapper>
-            <Title>👋¡Hola! Somos #ReactLadies </Title>
+            <Title><span role="img" aria-label="emoji">👋</span>¡Hola! Somos #ReactLadies </Title>
             <Text>
               Somos personas que amamos lo que hacemos, queremos que todos y
               todas formen parte

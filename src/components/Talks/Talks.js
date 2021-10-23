@@ -19,7 +19,7 @@ const Talks = () => {
       <Talk>
         <TalkContainer>
           <TalkGreeting>
-            <Title>💻 Nuestras charlas </Title>
+            <Title><span role="img" aria-label="emoji">💻 </span>Nuestras charlas </Title>
           </TalkGreeting>
           <TalkMessage>
             <Text>NUESTROS VÍDEOS</Text>

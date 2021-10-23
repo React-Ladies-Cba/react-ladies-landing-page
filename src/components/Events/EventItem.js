@@ -16,9 +16,25 @@ const EventItem = () => (
       <Title>Workshop React</Title>
     </EventTopBar>
     <EventCardDetail>
-      <li>📅 15/08/20</li>
-      <li>🕒 19:00hs</li>
-      <li>😀 Mentora: Maria Ocampo</li>
+      <li>
+        {" "}
+        <span role="img" aria-label="emoji">
+          📅{" "}
+        </span>
+        15/08/20
+      </li>
+      <li>
+        <span role="img" aria-label="emoji">
+          🕒{" "}
+        </span>
+        19:00hs
+      </li>
+      <li>
+        <span role="img" aria-label="emoji">
+          😀{" "}
+        </span>{" "}
+        Mentora: Maria Ocampo
+      </li>
     </EventCardDetail>
     <Line />
     <EventCardContent>

@@ -15,7 +15,13 @@ const Podcasts = () => {
   return (
     <>
       <Podcast>
-        <Title> 🎙️ Podcast </Title>
+        <Title>
+          {" "}
+          <span role="img" aria-label="emoji">
+            🎙️{" "}
+          </span>
+          Podcast{" "}
+        </Title>
         <PodcastContainer>
           <PodcastImage src={Audio} />
           <PodcastGreeting>
