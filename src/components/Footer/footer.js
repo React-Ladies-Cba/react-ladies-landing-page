@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <Container>
         <CentralLine>
-          Hecho con <span>💛</span> por las React Ladies
+          Hecho con <span role="img" aria-label="emoji">💛</span> por React Ladies
         </CentralLine>
       </Container>
     </>

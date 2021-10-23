@@ -7,16 +7,6 @@ export const Event = styled.div`
   height: 100%;
 `;
 
-export const Text = styled.h1`
-  font-family: Cocogoose, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 40px;
-  color: ${({ theme }) => theme.colors.blue};
-`;
-
 export const EventCardContainer = styled.div`
   width: 367px;
   height: 307px;

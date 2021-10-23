@@ -2,7 +2,6 @@ import React from "react";
 import {
   Event,
   EventsWrapper,
-  Text,
   TextBox,
   TextImage,
   TextDetail,
@@ -14,14 +13,14 @@ const Events = () => {
   return (
     <>
       <Event>
-        <Title>📅 Eventos</Title>
+        <Title><span role="img" aria-label="emoji">📅 </span>Eventos</Title>
         <EventsWrapper>
           <EventItem />
           <EventItem />
           <EventItem />
         </EventsWrapper>
         <TextBox>
-          <TextImage>👏</TextImage>
+          <TextImage><span role="img" aria-label="emoji">👏</span></TextImage>
           <TextDetail>¡No te los pierdas!</TextDetail>
         </TextBox>
       </Event>
