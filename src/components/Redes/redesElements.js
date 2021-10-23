@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { down } from "styled-breakpoints";
 
 export const Container = styled.div`
   width: 100%;
@@ -7,13 +8,17 @@ export const Container = styled.div`
 `;
 
 export const ContainerIcons = styled.div`
-  width: 70%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  ${down("tablet")} {
+    justify-content: space-around;
+    width: 70%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -32,6 +37,6 @@ export const Images = styled.img`
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 58px;
-  width: 58px;
+  height: 35px;
+  width: 35px;
 `;
