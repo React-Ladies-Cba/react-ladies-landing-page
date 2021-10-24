@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import { down } from "styled-breakpoints";
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import { down } from 'styled-breakpoints';
 
 export const Nav = styled.nav`
   background: linear-gradient(
@@ -35,7 +35,7 @@ export const NavbarContainer = styled.div`
   margin: auto;
   max-width: 1200px;
 
-  ${down("tablet")} {
+  ${down('tablet')} {
     justify-content: center;
   }
 `;
@@ -68,8 +68,11 @@ export const NavLink = styled(LinkS)`
   padding: 0 2rem;
   height: 100%;
   cursor: pointer;
-
+  transition: all 0.5s ease-in-out;
   &.active {
     border-bottom: 3px solid ${({ theme }) => theme.colors.pink};
+  }
+  &:hover {
+    opacity: 0.5;
   }
 `;
